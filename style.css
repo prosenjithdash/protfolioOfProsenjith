@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #060A2E;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+
+}
+.profileImage{
+    /* border: white;
+    border-style: dotted; */
+    margin-top: 10%;
+    text-align: center;
+}
+.pImage{
+    border-radius: 150px;
+}
+.container{
+    padding: 50px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.logo,.contactWithMe{
+    color: white;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background: #9993f5;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* Header text */
+.header_text{
+    margin-top: 5%;
+
+
+}
+.headerTitle p{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(226, 230, 241);
+    font-weight: bold;
+}
+.headerDescribe{
+    padding-top: 3%;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(226, 230, 241);
+    font-weight: lighter;
+
+}
